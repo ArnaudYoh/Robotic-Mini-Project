@@ -1,17 +1,17 @@
-#define E1 10 // Enable Pin for motor 1
-#define E2 11 // Enable Pin for motor 2
+#define E1 11 // Enable Pin for motor 1
+#define E2 3 // Enable Pin for motor 2
 
-#define I1 8 // control Pin 1 for motor 1
+#define I1 10 // control Pin 1 for motor 1
 #define I2 9 // control Pin 2 for motor 1
-#define I3 12 // control Pin 1 for motor 2
-#define I4 13 // control Pin 2 for motor 2
+#define I3 5 // control Pin 1 for motor 2
+#define I4 6 // control Pin 2 for motor 2
 
 byte key; 
 
 void setup() {
   
   //connect to the arduino board
-  //Serial.begin("Get our arduino serial nb");
+  Serial.begin(9600);
   //Connecting motors with arduino 
    pinMode(E1, OUTPUT);
    pinMode(E2, OUTPUT);
